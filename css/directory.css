@@ -81,7 +81,7 @@
 
   .artist a {
     font-size: .9rem;
-    text-decoration: underline .18rem;
+    text-decoration: underline .18rem var(--color-blue-light);
   }
 
   .artist p {
