@@ -64,8 +64,10 @@
 
 	#top-nav .back-folder {
 		overflow: hidden;
+		padding: 0;
 		height: 0;
 		width: 0;
+		border: none;
 	}
 }
 

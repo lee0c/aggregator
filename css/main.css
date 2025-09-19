@@ -53,22 +53,27 @@ main {
 
 .home {
 	background-color: var(--color-red-light);
+	border: 1px solid var(--color-red-dark);
 }
 
 .about {
 	background-color: var(--color-orange-light);
+	border: 1px solid var(--color-orange-dark);
 }
 
 .contact {
 	background-color: var(--color-green-light);
+	border: 1px solid var(--color-green-dark);
 }
 
 .directory {
 	background-color: var(--color-blue-light);
+	border: 1px solid var(--color-blue-dark);
 }
 
 .lists {
 	background-color: var(--color-purple-light);
+	border: 1px solid var(--color-purple-dark);
 }
 
 #folder {
