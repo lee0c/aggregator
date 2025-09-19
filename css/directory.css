@@ -63,8 +63,8 @@
 }
 
 .artist a {
-  text-decoration: underline .25rem;
-  color: var(--color-gray-light);
+  text-decoration: underline .25rem var(--color-blue-light);
+  color: var(--color-text-light);
 }
 
 .artist p {
