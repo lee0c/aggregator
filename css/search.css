@@ -53,6 +53,10 @@
 	border-radius: 0 1rem 1rem 0;
 }
 
+#search a {
+	text-decoration: none;
+}
+
 #search input[type="submit"] {
 	display: block;
 	margin: .2rem .2rem;
