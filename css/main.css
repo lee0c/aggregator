@@ -52,11 +52,11 @@ main {
 }
 
 .home {
-	background: var(--color-red-light);
+	background-color: var(--color-red-light);
 }
 
 .about {
-	background: var(--color-orange-light);
+	background-color: var(--color-orange-light);
 }
 
 .contact {
