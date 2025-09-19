@@ -1,0 +1,144 @@
+#top-nav {
+	width: 100%;
+	display: grid;
+	column-gap: .5rem;
+	grid-template-columns: 3fr repeat(3, 2fr) 1fr;
+}
+
+#top-nav h1 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+#top-nav a {
+	display: block;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	padding: 0 1rem;
+	color: var(--color-text-light);
+	text-decoration: none;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#top-nav .home,
+#top-nav .about,
+#top-nav .contact,
+#top-nav .directory,
+#top-nav .lists {
+	border-radius: 1rem 1rem 0 0;
+	padding: 0 0 1rem 0;
+}
+
+@media only screen and (min-width: 1000px) {
+	#top-nav {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 651px) {
+	#top-nav {
+		grid-template-areas: "home about contact directory lists";
+	}
+
+	#top-nav .home {
+		grid-area: home;
+	}
+
+	#top-nav .about {
+		grid-area: about;
+	}
+
+	#top-nav .contact {
+		grid-area: contact;
+	}
+
+	#top-nav .directory {
+		grid-area: directory;
+	}
+
+	#top-nav .lists {
+		grid-area: lists;
+	}
+
+	#top-nav .back-folder {
+		overflow: hidden;
+		height: 0;
+		width: 0;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#top-nav {
+		grid-template-rows: repeat(2, 3fr 1fr);
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	#top-nav h1 {
+		font-size: 1rem;
+	}
+
+	#top-nav a {
+		font-size: 1rem;
+		line-height: 1.75rem;
+		padding: 0 .5rem;
+	}
+
+	/* If row 1 ("home" "about" "contact") is in front visually) */
+	#top-nav.row-one-front .directory {
+		grid-area: 1 / 1 / span 2 / span 2;
+	}
+
+	#top-nav.row-one-front .lists {
+		grid-area: 1 / 3 / span 2 / span 1;
+	}
+
+	#top-nav.row-one-front .back-folder {
+		grid-area: 2 / 1 / span 4 / span 3;
+		z-index: 1;
+	}
+
+	#top-nav.row-one-front .home {
+		grid-area: 3 / 1 / span 2 / span 1;
+		z-index: 2;
+	}
+
+	#top-nav.row-one-front .about {
+		grid-area: 3 / 2 / span 2 / span 1;
+		z-index: 2;
+	}
+
+	#top-nav.row-one-front .contact {
+		grid-area: 3 / 3 / span 2 / span 1;
+		z-index: 2;
+	}
+
+	/* If row 2 ("directory" "lists") is in front visually) */
+	#top-nav.row-two-front .home {
+		grid-area: 1 / 1 / span 2 / span 1;
+	}
+
+	#top-nav.row-two-front .about {
+		grid-area: 1 / 2 / span 2 / span 1;
+	}
+
+	#top-nav.row-two-front .contact {
+		grid-area: 1 / 3 / span 2 / span 1;
+	}
+
+	#top-nav.row-two-front .back-folder {
+		grid-area: 2 / 1 / span 4 / span 3;
+		z-index: 1;
+	}
+
+	#top-nav.row-two-front .directory {
+		grid-area: 3 / 1 / span 2 / span 2;
+		z-index: 2;
+	}
+
+	#top-nav.row-two-front .lists {
+		grid-area: 3 / 3 / span 2 / span 1;
+		z-index: 2;
+	}
+}
