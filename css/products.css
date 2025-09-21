@@ -5,96 +5,46 @@
   margin: .2rem 0 0;
 }
 
-.product-grid {
-  background-color: var(--color-bg-light);
-  border-radius: 1rem;
-  display: grid;
-  grid-template-areas: "one one one two nameprice nameprice"
-                       "one one one three add view"
-                       "one one one four description description"
-                       "five six seven eight description description"
-                       "none none none none description description";
-  grid-template-columns: repeat(4, 1fr) repeat(2fr, 2fr);
-  margin: 1rem auto;
-  width: 98%;
-  padding: 1rem;
-  gap: .5rem;
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 650px) {
-  .product-grid {
-    grid-template-areas: "one one one two"
-                         "one one one three"
-                         "one one one four"
-                         "five six seven eight"
-                         "nameprice nameprice nameprice nameprice"
-                         "add add view view"
-                         "description description description description";
-    grid-template-columns: repeat(4, 1fr);
+  .price {
+    font-size: .9rem;
   }
 }
 
-#one { grid-area: one; }
-#two { grid-area: two; }
-#three { grid-area: three; }
-#four { grid-area: four; }
-#five { grid-area: five; }
-#six { grid-area: six; }
-#seven { grid-area: seven; }
-#eight { grid-area: eight; }
-
-.img-standin {
-  min-width: 10vw;
-  height: 0;
-  padding-bottom: 100%;
-  border-radius: 1rem;
+.two-col {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: .5rem;
+  padding: 0 1rem;
 }
 
-.name-price {
-  grid-area: nameprice;
-}
-
-.name-price h2,
-.name-price p {
-  line-height: 1.5rem;
-  margin: 0;
-  padding: .25rem 1rem;
-}
-
-.name-price h2 {
-  font-size: 1.4rem;
-}
-
-.name-price p {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.add,
-.view {
+.two-col a,
+.two-col button {
+  flex: 1;
   font-size: .9rem;
   line-height: 2rem;
-  margin: 1rem 0;
+  text-wrap: nowrap;
 }
 
-.add {
-  grid-area: add;
+@media only screen and (max-width: 650px) {
+  .two-col button,
+  .two-col a {
+    font-size: .8rem;
+  }
+}
+
+.two-col button {
   border-radius: 1rem;
-  margin-left: 1rem;
 }
 
-.view {
-  grid-area: view;
+.two-col a {
   text-decoration: underline .25rem var(--color-red-light);
   color: var(--color-text-light);
   text-align: center;
-  align-self: center;
-  margin-right: 1rem;
-}
-
-.description {
-  grid-area: description;
-  margin: 0;
-  padding: .5rem 1rem;
-  font-size: .8rem;
 }
