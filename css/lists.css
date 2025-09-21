@@ -7,19 +7,21 @@
 	background-color: var(--color-bg-light);
 	margin: 1rem auto;
 	border-radius: 1rem;
+	padding: 1rem;
 }
 
 .list-details {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 0 1rem;
 }
 
 .list-details h2,
 .list-details p {
 	font-size: 1.25rem;
 	line-height: 1.25rem;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 @media only screen and (max-width: 650px) {
@@ -30,13 +32,8 @@
 	}
 }
 
-.list-details h2 {
-	margin-left: 1rem;
-}
-
 .list-details p {
 	text-align: right;
-	margin-right: 1rem;
 	font-style: italic;
 }
 
@@ -45,7 +42,6 @@
 	justify-content: flex-start;
 	width: 100%;
 	gap: .5rem;
-	padding: 1rem;
 }
 
 .img-standin {
@@ -56,4 +52,21 @@
 	flex: 0 0 auto;
 	overflow: hidden;
 	border-radius: 1rem;
+}
+
+.list-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+.list-header h2,
+.list-header p {
+	margin: 0;
+}
+
+.list-header p {
+	font-size: 1.1rem;
+	font-style: italic;
 }
