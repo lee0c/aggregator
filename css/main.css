@@ -83,11 +83,13 @@ main {
 	min-height: 95vh;
 	border-radius: 1rem;
 	z-index: 10;
+	padding: 0 1rem;
 }
 
 @media only screen and (max-width: 650px) {
 	#folder {
 		min-height: 85vh;
+		padding: 0 .5rem;
 	}
 }
 

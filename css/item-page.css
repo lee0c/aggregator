@@ -3,8 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: 1.5rem;
-  margin: 1rem auto;
-  width: 98%;
+  margin: 1rem 0;
   background-color: var(--color-bg-light);
   border-radius: 1rem;
   padding: 1rem;

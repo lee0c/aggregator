@@ -3,8 +3,6 @@
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: 1fr;
-  width: 98%;
-  margin: 0 auto;
   gap: 1rem;
   padding: 1rem 0;
 }

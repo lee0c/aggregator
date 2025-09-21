@@ -14,12 +14,6 @@
 	}
 }
 
-.search-top {
-	height: auto;
-	width: 98%;
-	margin: 0 auto;
-}
-
 #search-label {
 	display: inline-block;
 	overflow: hidden;
