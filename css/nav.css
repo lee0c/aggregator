@@ -31,13 +31,35 @@
 	padding: 0 0 1rem 0;
 }
 
-@media only screen and (min-width: 1000px) {
+@media (hover: hover) {
+	#top-nav .home:hover {
+		text-decoration: .25rem underline var(--color-red-dark);
+	}
+
+	#top-nav .about:hover {
+		text-decoration: .25rem underline var(--color-orange-dark);
+	}
+
+	#top-nav .contact:hover {
+		text-decoration: .25rem underline var(--color-green-dark);
+	}
+	
+	#top-nav .directory:hover {
+		text-decoration: .25rem underline var(--color-blue-dark);
+	}
+
+	#top-nav .lists:hover {
+		text-decoration: .25rem underline var(--color-purple-dark);
+	}
+}
+
+@media (min-width: 1000px) {
 	#top-nav {
 		width: 60%;
 	}
 }
 
-@media only screen and (min-width: 650px) {
+@media (min-width: 650px) {
 	#top-nav {
 		grid-template-areas: "home about contact directory lists";
 	}
@@ -71,7 +93,7 @@
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
 	#top-nav {
 		grid-template-rows: repeat(2, 3fr 1fr);
 		grid-template-columns: repeat(3, 1fr);
@@ -85,6 +107,28 @@
 		font-size: 1rem;
 		line-height: 1.75rem;
 		padding: 0 .5rem;
+	}
+
+	@media (hover: hover) {
+		#top-nav .home:hover {
+			text-decoration: .18rem underline var(--color-red-dark);
+		}
+
+		#top-nav .about:hover {
+			text-decoration: .18rem underline var(--color-orange-dark);
+		}
+
+		#top-nav .contact:hover {
+			text-decoration: .18rem underline var(--color-green-dark);
+		}
+		
+		#top-nav .directory:hover {
+			text-decoration: .18rem underline var(--color-blue-dark);
+		}
+
+		#top-nav .lists:hover {
+			text-decoration: .18rem underline var(--color-purple-dark);
+		}
 	}
 
 	/* If row 1 ("home" "about" "contact") is in front visually) */

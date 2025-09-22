@@ -53,27 +53,27 @@ main {
 
 .home {
 	background-color: var(--color-red-light);
-	border: 1px solid var(--color-red-dark);
+	border: .07rem solid var(--color-red-dark);
 }
 
 .about {
 	background-color: var(--color-orange-light);
-	border: 1px solid var(--color-orange-dark);
+	border: .07rem solid var(--color-orange-dark);
 }
 
 .contact {
 	background-color: var(--color-green-light);
-	border: 1px solid var(--color-green-dark);
+	border: .07rem solid var(--color-green-dark);
 }
 
 .directory {
 	background-color: var(--color-blue-light);
-	border: 1px solid var(--color-blue-dark);
+	border: .07rem solid var(--color-blue-dark);
 }
 
 .lists {
 	background-color: var(--color-purple-light);
-	border: 1px solid var(--color-purple-dark);
+	border: .07rem solid var(--color-purple-dark);
 }
 
 #folder {
@@ -86,7 +86,7 @@ main {
 	padding: 0 1rem;
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
 	#folder {
 		min-height: 85vh;
 		padding: 0 .5rem;

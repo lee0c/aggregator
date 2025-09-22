@@ -9,7 +9,7 @@
   padding: 1rem;
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
   .page-grid {
     grid-template-columns: 1fr;
   }
@@ -56,7 +56,7 @@ p {
   font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
   h2 {
     font-size: 1.1rem;
   }
