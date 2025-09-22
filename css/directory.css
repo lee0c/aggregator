@@ -1,29 +1,10 @@
-.artist a {
-  text-decoration: underline .25rem var(--color-blue-light);
-  color: var(--color-text-light);
-}
-
-@media (max-width: 650px) {
-  .artist a {
-    text-decoration: underline .18rem var(--color-blue-light);
-  }
-}
-
 @media (hover: hover) {
-  .artist a:hover {
-    text-decoration: underline .4rem var(--color-blue-dark);
-  }
-
   .artist:hover {
     outline: .13rem solid var(--color-blue-dark);
     outline-offset: .13rem;
   }
 
   @media (max-width: 650px) {
-    .artist a:hover {
-      text-decoration: underline .25rem var(--color-blue-dark);
-    }
-
     .artist:hover {
       outline: .1rem solid var(--color-blue-dark);
       outline-offset: 1rem;

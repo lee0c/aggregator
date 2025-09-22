@@ -2,6 +2,20 @@ h2 {
   margin: 1rem auto;
 }
 
+@media (hover: hover) {
+  .product:hover {
+    outline: .13rem solid var(--color-red-dark);
+    outline-offset: .13rem;
+  }
+
+  @media (max-width: 650px) {
+    .product:hover {
+      outline: .1rem solid var(--color-red-dark);
+      outline-offset: 1rem;
+    }
+  }
+}
+
 .product-details p {
   font-style: normal;
   font-size: 1rem;

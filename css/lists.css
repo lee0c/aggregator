@@ -10,6 +10,20 @@
 	padding: 1rem;
 }
 
+@media (hover: hover) {
+  .list:hover {
+    outline: .13rem solid var(--color-purple-dark);
+    outline-offset: .13rem;
+  }
+
+  @media (max-width: 650px) {
+    .list:hover {
+      outline: .1rem solid var(--color-purple-dark);
+      outline-offset: 1rem;
+    }
+  }
+}
+
 .list-details {
 	display: flex;
 	justify-content: space-between;
