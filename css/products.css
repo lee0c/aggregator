@@ -2,14 +2,22 @@ h2 {
   margin: 1rem auto;
 }
 
+.product-card a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-text-light);
+  border-radius: 1rem;
+}
+
 @media (hover: hover) {
-  .product:hover {
+  .product-card a:hover {
     outline: .13rem solid var(--color-red-dark);
     outline-offset: .13rem;
   }
 
   @media (max-width: 650px) {
-    .product:hover {
+    .product-card a:hover {
       outline: .1rem solid var(--color-red-dark);
       outline-offset: 1rem;
     }

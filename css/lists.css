@@ -5,19 +5,27 @@
 .list {
 	list-style: none;
 	background-color: var(--color-bg-light);
-	margin: 1rem auto;
 	border-radius: 1rem;
+	margin: 1rem 0;
+}
+
+.list a {
+	display: block;
 	padding: 1rem;
+	color: var(--color-text-light);
+	text-decoration: none;
+	border-radius: 1rem;
 }
 
 @media (hover: hover) {
-  .list:hover {
+  .list a:hover,
+	.product-card a:hover {
     outline: .13rem solid var(--color-purple-dark);
     outline-offset: .13rem;
   }
 
   @media (max-width: 650px) {
-    .list:hover {
+    .list a:hover {
       outline: .1rem solid var(--color-purple-dark);
       outline-offset: 1rem;
     }

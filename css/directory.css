@@ -1,13 +1,44 @@
+.artist-card a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-text-light);
+  border-radius: 1rem;
+}
+
 @media (hover: hover) {
-  .artist:hover {
+  .artist-card a:hover {
     outline: .13rem solid var(--color-blue-dark);
     outline-offset: .13rem;
   }
 
   @media (max-width: 650px) {
-    .artist:hover {
+    .artist-card a:hover {
       outline: .1rem solid var(--color-blue-dark);
       outline-offset: 1rem;
+    }
+  }
+}
+
+.artist a {
+  text-decoration: underline .25rem var(--color-blue-light);
+  color: var(--color-text-light);
+}
+
+@media (max-width: 650px) {
+  .artist a {
+    text-decoration: underline .18rem var(--color-blue-light);
+  }
+}
+
+@media (hover: hover) {
+  .artist a:hover {
+    text-decoration: underline .4rem var(--color-blue-dark);
+  }
+
+  @media (max-width: 650px) {
+    .artist a:hover {
+      text-decoration: underline .25rem var(--color-blue-dark);
     }
   }
 }
