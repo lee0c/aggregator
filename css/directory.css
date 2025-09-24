@@ -6,6 +6,18 @@
   border-radius: 1rem;
 }
 
+.artist-card a:focus {
+  outline: .13rem solid var(--color-blue-dark);
+  outline-offset: .13rem;
+}
+
+@media (max-width: 650px) {
+  .artist-card a:focus {
+    outline: .1rem solid var(--color-blue-dark);
+    outline-offset: 1rem;
+  }
+}
+
 @media (hover: hover) {
   .artist-card a:hover {
     outline: .13rem solid var(--color-blue-dark);
@@ -28,6 +40,17 @@
 @media (max-width: 650px) {
   .artist a {
     text-decoration: underline .18rem var(--color-blue-light);
+  }
+}
+
+.artist a:focus {
+  outline: none;
+  text-decoration: underline .4rem var(--color-blue-dark);
+}
+
+@media (max-width: 650px) {
+  .artist a:focus {
+    text-decoration: underline .25rem var(--color-blue-dark);
   }
 }
 

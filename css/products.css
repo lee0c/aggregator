@@ -10,6 +10,19 @@ h2 {
   border-radius: 1rem;
 }
 
+.product-card a:focus {
+  outline: .13rem solid var(--color-red-dark);
+  outline-offset: .13rem;
+}
+
+@media (max-width: 650px) {
+  .product-card a:focus {
+    outline: .1rem solid var(--color-red-dark);
+    outline-offset: 1rem;
+  }
+}
+
+
 @media (hover: hover) {
   .product-card a:hover {
     outline: .13rem solid var(--color-red-dark);
@@ -37,9 +50,7 @@ h2 {
 }
 
 @media (max-width: 650px) {
-  .price {
-    font-size: .9rem;
-  }
+  .price { font-size: .9rem; }
 }
 
 .two-col {
@@ -69,15 +80,17 @@ h2 {
   border-radius: 1rem;
 }
 
+.two-col button:focus { outline: .08rem solid var(--color-red-dark); }
+
+@media (max-width: 650px) {
+  .two-col button:focus { outline: .06rem solid var(--color-red-dark); }
+}
+
 @media (hover: hover) {
-  .two-col button:hover {
-    outline: .07rem solid var(--color-red-dark);
-  }
+  .two-col button:hover { outline: .08rem solid var(--color-red-dark); }
 
   @media (max-width: 650px) {
-    .two-col button:hover {
-      outline: .05rem solid var(--color-red-dark);
-    }
+    .two-col button:hover { outline: .06rem solid var(--color-red-dark); }
   }
 }
 
@@ -87,14 +100,19 @@ h2 {
   text-align: center;
 }
 
+.two-col a:focus {
+  text-decoration: underline .4rem var(--color-red-dark);
+  outline: none;
+}
+
+@media (max-width: 650px) {
+  .two-col a:focus { text-decoration: underline .25rem var(--color-red-dark); }
+}
+
 @media (hover: hover) {
-  .two-col a:hover {
-    text-decoration: underline .4rem var(--color-red-dark);
-  }
+  .two-col a:hover { text-decoration: underline .4rem var(--color-red-dark); }
 
   @media (max-width: 650px) {
-    .two-col a:hover {
-      text-decoration: underline .25rem var(--color-red-dark);
-    }
+    .two-col a:hover { text-decoration: underline .25rem var(--color-red-dark); }
   }
 }
