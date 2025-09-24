@@ -20,6 +20,29 @@
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+}
+
+#top-nav .skip {
+	display: inline-block;
+	overflow: hidden;
+	height: 0;
+	width: 0;
+}
+
+#top-nav .skip a:focus {
+	display: block;
+	position: fixed;
+	top: 1.5rem;
+	left: 3rem;
+	height: auto;
+	width: auto;
+	background-color: var(--color-bg-light);
+	z-index: 100;
+	border-radius: 1rem;
+	border: .07rem solid var(--color-gray);
+	outline: none;
+	text-decoration: .25rem underline var(--color-gray);
 }
 
 #top-nav .home,
@@ -51,6 +74,30 @@
 	#top-nav .lists:hover {
 		text-decoration: .25rem underline var(--color-purple-dark);
 	}
+}
+
+#top-nav a:focus {
+	outline: none;
+}
+
+#top-nav .home a:focus {
+	text-decoration: .25rem underline var(--color-red-dark);
+}
+
+#top-nav .about a:focus {
+	text-decoration: .25rem underline var(--color-orange-dark);
+}
+
+#top-nav .contact a:focus {
+	text-decoration: .25rem underline var(--color-green-dark);
+}
+
+#top-nav .directory a:focus {
+	text-decoration: .25rem underline var(--color-blue-dark);
+}
+
+#top-nav .lists a:focus {
+	text-decoration: .25rem underline var(--color-purple-dark);
 }
 
 @media (min-width: 1000px) {
@@ -109,6 +156,13 @@
 		padding: 0 .5rem;
 	}
 
+	#top-nav .skip a:focus {
+		top: 4.5rem;
+		left: 3rem;
+		width: 12rem;
+		text-align: center;
+	}
+
 	@media (hover: hover) {
 		#top-nav .home:hover {
 			text-decoration: .18rem underline var(--color-red-dark);
@@ -129,6 +183,26 @@
 		#top-nav .lists:hover {
 			text-decoration: .18rem underline var(--color-purple-dark);
 		}
+	}
+
+	#top-nav .home a:focus {
+		text-decoration: .18rem underline var(--color-red-dark);
+	}
+
+	#top-nav .about a:focus {
+		text-decoration: .18rem underline var(--color-orange-dark);
+	}
+
+	#top-nav .contact a:focus {
+		text-decoration: .18rem underline var(--color-green-dark);
+	}
+
+	#top-nav .directory a:focus {
+		text-decoration: .18rem underline var(--color-blue-dark);
+	}
+
+	#top-nav .lists a:focus {
+		text-decoration: .18rem underline var(--color-purple-dark);
 	}
 
 	/* If row 1 ("home" "about" "contact") is in front visually) */
