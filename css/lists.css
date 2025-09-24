@@ -17,6 +17,19 @@
 	border-radius: 1rem;
 }
 
+.list a:focus,
+.product-card a:focus {
+	outline: .13rem solid var(--color-purple-dark);
+	outline-offset: .13rem;
+}
+
+@media (max-width: 650px) {
+	.list a:focus {
+		outline: .1rem solid var(--color-purple-dark);
+		outline-offset: 1rem;
+	}
+}
+
 @media (hover: hover) {
   .list a:hover,
 	.product-card a:hover {
